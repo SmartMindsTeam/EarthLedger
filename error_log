@@ -1,0 +1,105 @@
+[29-May-2018 10:35:43 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[29-May-2018 10:35:45 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[31-May-2018 09:08:55 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[31-May-2018 09:08:56 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[31-May-2018 09:48:25 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[01-Jun-2018 04:18:28 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[01-Jun-2018 04:18:30 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[02-Jun-2018 08:09:35 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[02-Jun-2018 08:09:36 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[03-Jun-2018 02:20:31 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[03-Jun-2018 02:20:45 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[03-Jun-2018 12:39:29 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[03-Jun-2018 12:39:29 UTC] PHP Fatal error:  Cannot use humhub\modules\user\models\User as User because the name is already in use in /home/earthledger/public_html/community/protected/humhub/modules/user/components/BaseAccountController.php on line 12
+[04-Jun-2018 01:55:19 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ':' in /home/earthledger/public_html/community/themes/FlatHub/views/like/widgets/likeLink.php on line 12
+[04-Jun-2018 01:55:56 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ':' in /home/earthledger/public_html/community/themes/FlatHub/views/like/widgets/likeLink.php on line 12
+[04-Jun-2018 01:56:03 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ':' in /home/earthledger/public_html/community/themes/FlatHub/views/like/widgets/likeLink.php on line 12
+[04-Jun-2018 01:56:35 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ':' in /home/earthledger/public_html/community/themes/FlatHub/views/like/widgets/likeLink.php on line 12
+[06-Jun-2018 09:00:53 UTC] An Error occurred while handling another error:
+exception 'yii\base\InvalidConfigException' with message 'Unknown component ID: request' in /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:138
+Stack trace:
+#0 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/web/Application.php(159): yii\di\ServiceLocator->get('request')
+#1 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/Component.php(132): yii\web\Application->getRequest()
+#2 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(75): yii\base\Component->__get('request')
+#3 /home/earthledger/public_html/community/protected/humhub/components/View.php(217): yii\di\ServiceLocator->__get('request')
+#4 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/views/errorHandler/exception.php(451): humhub\components\View->endBody()
+#5 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/View.php(330): require('/home/earthledg...')
+#6 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/earthledg...', Array)
+#7 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/web/ErrorHandler.php(249): yii\base\View->renderFile('@yii/views/erro...', Array, Object(yii\web\ErrorHandler))
+#8 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/web/ErrorHandler.php(116): yii\web\ErrorHandler->renderFile('@yii/views/erro...', Array)
+#9 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\web\ErrorHandler->renderException(Object(yii\base\InvalidConfigException))
+#10 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#11 {main}
+Previous exception:
+exception 'yii\base\InvalidConfigException' with message 'The configuration for the "authClientCollection" component must contain a "class" element.' in /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/di/ServiceLocator.php:204
+Stack trace:
+#0 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/di/ServiceLocator.php(260): yii\di\ServiceLocator->set('authClientColle...', Array)
+#1 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/Component.php(172): yii\di\ServiceLocator->setComponents(Array)
+#2 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/BaseYii.php(529): yii\base\Component->__set('components', Array)
+#3 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/Object.php(105): yii\BaseYii::configure(Object(humhub\components\Application), Array)
+#4 /home/earthledger/public_html/community/protected/vendor/yiisoft/yii2/base/Application.php(205): yii\base\Object->__construct(Array)
+#5 /home/earthledger/public_html/community/index.php(25): yii\base\Application->__construct(Array)
+#6 {main}
+$_SERVER = [
+    'TZ' => 'Etc/UTC',
+    'REDIRECT_UNIQUE_ID' => 'WxeixZvMNP8yFkVdTG@fPAAAAAs',
+    'REDIRECT_SCRIPT_URL' => '/community/index.php',
+    'REDIRECT_SCRIPT_URI' => 'https://earthledger.one/community/index.php',
+    'REDIRECT_WPR_SSL' => '-https',
+    'REDIRECT_WPR_ENC' => '_gzip',
+    'REDIRECT_HTTPS' => 'on',
+    'REDIRECT_SSL_TLS_SNI' => 'earthledger.one',
+    'REDIRECT_HANDLER' => 'application/x-httpd-ea-php56',
+    'REDIRECT_STATUS' => '200',
+    'UNIQUE_ID' => 'WxeixZvMNP8yFkVdTG@fPAAAAAs',
+    'SCRIPT_URL' => '/community/index.php',
+    'SCRIPT_URI' => 'https://earthledger.one/community/index.php',
+    'HTTPS' => 'on',
+    'SSL_TLS_SNI' => 'earthledger.one',
+    'HTTP_HOST' => 'earthledger.one',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_COOKIE' => 'pm_new-people-panel=expanded; pm_new-spaces-panel=expanded; PHPSESSID=ln87v1ongibd8ue173oji7al93; _csrf=156bde5cac897b14209a66866a67bb9230aaab16bc911afc9d18e416e3ec2549a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%821%85m%E5%B8%C4%9C%FD%88%BE%04%A8l%DD%5D%FB%24h1%9DW-%26z%95a%2C%A4%FE%10%9F%22%3B%7D',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_PRAGMA' => 'no-cache',
+    'HTTP_CACHE_CONTROL' => 'no-cache',
+    'HTTP_X_HTTPS' => '1',
+    'PATH' => '/usr/local/jdk/bin:/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/usr/X11R6/bin:/root/bin:/opt/bin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'earthledger.one',
+    'SERVER_ADDR' => '54.37.191.77',
+    'SERVER_PORT' => '443',
+    'REMOTE_ADDR' => '122.174.173.42',
+    'DOCUMENT_ROOT' => '/home/earthledger/public_html',
+    'REQUEST_SCHEME' => 'https',
+    'CONTEXT_PREFIX' => '/cgi-sys',
+    'CONTEXT_DOCUMENT_ROOT' => '/usr/local/cpanel/cgi-sys/',
+    'SERVER_ADMIN' => 'webmaster@earthledger.one',
+    'SCRIPT_FILENAME' => '/home/earthledger/public_html/community/index.php',
+    'REMOTE_PORT' => '51641',
+    'REDIRECT_URL' => '/community/index.php',
+    'REDIRECT_QUERY_STRING' => 'r=dashboard%2Fdashboard',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard',
+    'REQUEST_URI' => '/community/index.php?r=dashboard%2Fdashboard',
+    'SCRIPT_NAME' => '/community/index.php',
+    'ORIG_SCRIPT_FILENAME' => '/usr/local/cpanel/cgi-sys/ea-php56',
+    'ORIG_PATH_INFO' => '/community/index.php',
+    'ORIG_PATH_TRANSLATED' => '/home/earthledger/public_html/community/index.php',
+    'ORIG_SCRIPT_NAME' => '/cgi-sys/ea-php56',
+    'PHP_SELF' => '/community/index.php',
+    'REQUEST_TIME_FLOAT' => 1528275653.0835769176483154296875,
+    'REQUEST_TIME' => 1528275653,
+    'argv' => [
+        'r=dashboard%2Fdashboard',
+    ],
+    'argc' => 1,
+]
+[21-Jun-2018 18:16:10 Pacific/Pago_Pago] PHP Fatal error:  Cannot use humhub\modules\events\models\Events as Events because the name is already in use in /home/earthledger/public_html/community/protected/modules/events/Module.php on line 8
+[05-Jul-2018 17:38:27 Pacific/Pago_Pago] PHP Fatal error:  Call to a member function getErrors() on boolean in /home/earthledger/public_html/community/protected/modules/registration/controllers/CustomRegistrationController.php on line 129

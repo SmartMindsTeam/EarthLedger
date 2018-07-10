@@ -1,0 +1,581 @@
+#dash_btn {
+    display: block;
+    width: 100%;
+    border: 2px solid #2e3b40;
+    height: 36px;
+    background-color: #fff;
+    color: #c4c4c1;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 15px;
+    padding: 6px 12px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.field-custompost-tags .bootstrap-tagsinput {
+    width: 100%;
+    border: 2px solid #2e3b40;
+}
+
+.field-custompost-connections .select2-selection__rendered {
+    border: 2px solid #2e3b40;
+}
+
+.btn-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.btn-row button {
+    width: 20%;
+    border: none;
+    color: #fff;
+    padding: 3px 3px;
+}
+
+.btn-row button:nth-child(1) {
+    background-color: #529b3f;
+}
+
+.btn-row button:nth-child(2) {
+    background-color: #c1a008;
+}
+
+.btn-row button:nth-child(3) {
+    background-color: #0e8ab8;
+}
+
+.btn-row button:nth-child(4) {
+    background-color: #aba9ab;
+}
+
+.btn-row button:nth-child(5) {
+    background-color: #1d9381;
+}
+
+.modal-challenge .modal-content {
+    background: #333333 url(../img/Challenge.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.modal-challenge .modal-content .modal-header {
+    border-top: 10px solid #529b3f;
+    color: #fff;
+    padding: 0px 20px 0px;
+}
+
+.modal-challenge .modal-content .modal-header button.close {
+    color: #fff;
+}
+
+.modal-challenge .modal-content .modal-header h3 {
+    color: #dcdadc;
+}
+
+.modal-challenge .modal-content .modal-body {
+    color: #dcdadc !important;
+    padding: 20px 20px 0px 20px;
+}
+
+.modal-challenge .modal-content .modal-body .form-control {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #549743;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-challenge .modal-content .modal-body .bootstrap-tagsinput {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #549743;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-challenge .modal-content .modal-body .select2-container--krajee .select2-selection {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #549743;
+    border-radius: 0;
+}
+
+.modal-challenge .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice {
+    background: #128680;
+    border: 1px solid #128680;
+    color: #dcdadc !important;
+}
+
+.modal-challenge .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice__remove {
+    color: #dcdadc !important;
+}
+
+.modal-challenge .modal-content .modal-body .fileinput-button {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #549743;
+    margin-bottom: 10px;
+}
+
+.modal-challenge .modal-content .modal-body .center-btn button {
+    border: 1px solid #fff;
+    background-color: transparent !important;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.modal-challenge .modal-content .modal-body .center-btn button:hover {
+    background-color: #549743 !important;
+    border: 1px solid #549743 !important;
+    color: #000 !important;
+}
+
+.modal-challenge .modal-content .modal-body .center-btn {
+    text-align: center;
+}
+
+.modal-solution .modal-content {
+    background: #333333 url(../img/Solution.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.modal-solution .modal-content .modal-header {
+    border-top: 10px solid #c1a008;
+    color: #fff;
+    padding: 0px 20px 0px;
+}
+
+.modal-solution .modal-content .modal-header button.close {
+    color: #fff;
+}
+
+.modal-solution .modal-content .modal-header h3 {
+    color: #dcdadc;
+}
+
+.modal-solution .modal-content .modal-body {
+    color: #dcdadc !important;
+    padding: 20px 20px 0px 20px;
+}
+
+.modal-solution .modal-content .modal-body .form-control {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #c1a008;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-solution .modal-content .modal-body .bootstrap-tagsinput {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #c1a008;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-solution .modal-content .modal-body .select2-container--krajee .select2-selection {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #c1a008;
+    border-radius: 0;
+}
+
+.modal-solution .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice {
+    background: #128680;
+    border: 1px solid #128680;
+    color: #dcdadc !important;
+}
+
+.modal-solution .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice__remove {
+    color: #dcdadc !important;
+}
+
+.modal-solution .modal-content .modal-body .fileinput-button {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #c1a008;
+    margin-bottom: 10px;
+}
+
+.modal-solution .modal-content .modal-body .center-btn {
+    text-align: center;
+}
+
+.modal-solution .modal-content .modal-body .center-btn button {
+    border: 1px solid #fff;
+    background-color: transparent !important;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.modal-solution .modal-content .modal-body .center-btn button:hover {
+    background-color: #c1a008 !important;
+    border: 1px solid #c1a008 !important;
+    color: #000 !important;
+}
+
+.modal-solution .modal-content .modal-body .center-btn button:focus {
+    background-color: #c1a008 !important;
+}
+
+.modal-product .modal-content {
+    background: #333333 url(../img/Product.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.modal-product .modal-content .modal-header {
+    border-top: 10px solid #0e8ab8;
+    color: #fff;
+    padding: 0px 20px 0px;
+}
+
+.modal-product .modal-content .modal-header button.close {
+    color: #fff;
+}
+
+.modal-product .modal-content .modal-header h3 {
+    color: #dcdadc;
+}
+
+.modal-product .modal-content .modal-body {
+    color: #dcdadc !important;
+    padding: 20px 20px 0px 20px;
+}
+
+.modal-product .modal-content .modal-body .form-control {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #0e8ab8;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-product .modal-content .modal-body .bootstrap-tagsinput {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #0e8ab8;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-product .modal-content .modal-body .select2-container--krajee .select2-selection {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #0e8ab8;
+    border-radius: 0;
+}
+
+.modal-product .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice {
+    background: #128680;
+    border: 1px solid #128680;
+    color: #dcdadc !important;
+}
+
+.modal-product .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice__remove {
+    color: #dcdadc !important;
+}
+
+.modal-product .modal-content .modal-body .fileinput-button {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #0e8ab8;
+    margin-bottom: 10px;
+}
+
+.modal-product .modal-content .modal-body .center-btn {
+    text-align: center;
+}
+
+.modal-product .modal-content .modal-body .center-btn button {
+    border: 1px solid #fff;
+    background-color: transparent !important;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.modal-product .modal-content .modal-body .center-btn button:hover {
+    background-color: #0e8ab8 !important;
+    border: 1px solid #0e8ab8 !important;
+    color: #000 !important;
+}
+
+.modal-product .modal-content .modal-body .center-btn button:focus {
+    background-color: #0e8ab8 !important;
+}
+
+.modal-news .modal-content {
+    background: #333333 url(../img/News.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.modal-news .modal-content .modal-header {
+    border-top: 10px solid #aba9ab;
+    color: #fff;
+    padding: 0px 20px 0px;
+}
+
+.modal-news .modal-content .modal-header button.close {
+    color: #fff;
+}
+
+.modal-news .modal-content .modal-header h3 {
+    color: #dcdadc;
+}
+
+.modal-news .modal-content .modal-body {
+    color: #dcdadc !important;
+    padding: 20px 20px 0px 20px;
+}
+
+.modal-news .modal-content .modal-body .form-control {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #aba9ab;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-news .modal-content .modal-body .bootstrap-tagsinput {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #aba9ab;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-news .modal-content .modal-body .select2-container--krajee .select2-selection {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #aba9ab;
+    border-radius: 0;
+}
+
+.modal-news .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice {
+    background: #128680;
+    border: 1px solid #128680;
+    color: #dcdadc !important;
+}
+
+.modal-news .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice__remove {
+    color: #dcdadc !important;
+}
+
+.modal-news .modal-content .modal-body .fileinput-button {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #aba9ab;
+    margin-bottom: 10px;
+}
+
+.modal-news .modal-content .modal-body .center-btn {
+    text-align: center;
+}
+
+.modal-news .modal-content .modal-body .center-btn button {
+    border: 1px solid #fff;
+    background-color: transparent !important;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.modal-news .modal-content .modal-body .center-btn button:hover {
+    background-color: #aba9ab !important;
+    border: 1px solid #aba9ab !important;
+    color: #000 !important;
+}
+
+.modal-news .modal-content .modal-body .center-btn button:focus {
+    background-color: #aba9ab !important;
+}
+
+.modal-custom .modal-content {
+    background: #333333 url(../img/Custom.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.modal-custom .modal-content .modal-header {
+    border-top: 10px solid #1d9381;
+    color: #fff;
+    padding: 0px 20px 0px;
+}
+
+.modal-custom .modal-content .modal-header button.close {
+    color: #fff;
+}
+
+.modal-custom .modal-content .modal-header h3 {
+    color: #dcdadc;
+}
+
+.modal-custom .modal-content .modal-body {
+    color: #dcdadc !important;
+    padding: 20px 20px 0px 20px;
+}
+
+.modal-custom .modal-content .modal-body .form-control {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #1d9381;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-custom .modal-content .modal-body .bootstrap-tagsinput {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #1d9381;
+    border-radius: 0;
+    min-height: 38px;
+}
+
+.modal-custom .modal-content .modal-body .select2-container--krajee .select2-selection {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #1d9381;
+    border-radius: 0;
+}
+
+.modal-custom .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice {
+    background: #128680;
+    border: 1px solid #128680;
+    color: #dcdadc !important;
+}
+
+.modal-custom .modal-content .modal-body .select2-container--krajee .select2-selection--multiple .select2-selection__choice__remove {
+    color: #dcdadc !important;
+}
+
+.modal-custom .modal-content .modal-body .fileinput-button {
+    background-color: #333;
+    color: #dcdadc !important;
+    border: 1px solid #1d9381;
+    margin-bottom: 10px;
+}
+
+.modal-custom .modal-content .modal-body .center-btn {
+    text-align: center;
+}
+
+.modal-custom .modal-content .modal-body .center-btn button {
+    border: 1px solid #fff;
+    background-color: transparent !important;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.modal-custom .modal-content .modal-body .center-btn button:hover {
+    background-color: #1d9381 !important;
+    border: 1px solid #1d9381 !important;
+    color: #000 !important;
+}
+
+.modal-custom .modal-content .modal-body .center-btn button:focus {
+    background-color: #1d9381 !important;
+}
+
+.btn-d-close {
+    border: none;
+    background-color: transparent;
+    color: #54a9a6;
+    border-bottom: 1px solid #54a9a6;
+}
+
+#dash_btn {
+    border: none;
+    border-radius: 0;
+}
+
+#customPostModal select {
+    background: #333333 url(../img/icon.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: 98% 9px !important;
+    background-size: 20px !important;
+}
+
+#customPostModal #custom_post_submit {
+    border-radius: 0 !important;
+    font-size: 17px !important;
+    ;
+}
+
+#customPostModal .select2-container--krajee .select2-selection--multiple .select2-search--inline .select2-search__field {
+    width: 100% !important;
+}
+
+.black-search-box {
+    border: 1px solid #616161 !important;
+    background-color: #2d2d2d;
+    color: #fff;
+    background-image: url(../img/icon_search_blue16x16.png);
+    background-repeat: no-repeat;
+    background-position: 95% 8px;
+    margin: 17px 0px;
+}
+
+#donateModal .modal-dialog {
+    width: 700px;
+}
+
+#donateModal .modal-dialog #img-holder, #donateModal .modal-dialog .box {
+    display: inline-block;
+}
+
+#donateModal .modal-dialog .box {
+    width: 48%;
+}
+
+#donateModal .modal-dialog .modal-body button.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #00b7cd;
+    opacity: 1;
+    color: #fff;
+    padding: 5px 10px 8px 10px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#donateModal .modal-dialog .box p:first-child {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Raleway-Bold';
+}
+
+@media only screen and (min-width:320px) and (max-width:499px) {
+    .btn-row button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:390px) {
+    #donateModal .modal-dialog #img-holder img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+a:2:{i:0;s:960:"
+<a href="/community/index.php?r=activity%2Flink&id=53">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="71">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/community/static/img/default_user.jpg">
+            
+            <!-- Show space image, if you are outside from a space -->
+                            
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Shaan C</strong> created a new Custom Post "".<br>
+
+                <!-- show time -->
+                <span class="time"><span title="Jun 16, 2018 - 1:10 AM">Jun 16, 2018</span></span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

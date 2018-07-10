@@ -1,0 +1,23 @@
+a:2:{i:0;s:960:"
+<a href="/community/index.php?r=activity%2Flink&id=34">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="41">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/community/static/img/default_user.jpg">
+            
+            <!-- Show space image, if you are outside from a space -->
+                            
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Joseph K</strong> not attends to Event "Test".<br>
+
+                <!-- show time -->
+                <span class="time" title="2018-06-07T12:17:16+00:00">Jun 7, 2018 - 12:17 PM</span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

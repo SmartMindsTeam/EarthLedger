@@ -1,0 +1,23 @@
+<?php
+return array (
+  '<strong>Space</strong> followers' => '<strong> Prostor</strong> - pratitelji',
+  'Administrator:' => 'Administrator:',
+  'Could not delete user who is a space owner! Name of Space: {spaceName}' => 'Nije moguće izbrisati korisnika koji je vlasnik prostora! Naziv prostora: {spaceName}',
+  'Default' => 'Zadano',
+  'Everyone can enter' => 'Svi mogu ući',
+  'Invite and request' => 'Poziv i zahtjev',
+  'Moderator:' => 'Moderator:',
+  'No spaces found.' => 'Nisu pronađeni prostori.',
+  'Only by invite' => 'Samo pozivom',
+  'Owner:' => 'Vlasnik:',
+  'Private' => 'Privatno',
+  'Private (Invisible)' => 'Privatno (Nevidljivo)',
+  'Public' => 'Javno',
+  'Public (Members & Guests)' => 'Javno (Članovi i gosti)',
+  'Public (Members only)' => 'Javno (Samo članovi)',
+  'Public (Registered users only)' => 'Javno (Samo registrirani korisnici)',
+  'Public (Visible)' => 'Javno (Vidljivo)',
+  'Settings' => 'Postavke',
+  'Space' => 'Prostor',
+  'Visible for all (members and guests)' => 'Vidljivo za sve (članovi i gosti)',
+);

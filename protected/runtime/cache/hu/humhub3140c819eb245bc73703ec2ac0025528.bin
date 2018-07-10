@@ -1,0 +1,23 @@
+a:2:{i:0;s:1416:"
+<a href="/community/index.php?r=activity%2Flink&id=84">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="118">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/community/static/img/default_user.jpg">
+            
+            <!-- Show space image, if you are outside from a space -->
+                                                <div class="img-space pull-left space-profile-acronym-1 space-acronym" style=" background-color: #6fdbe8; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">ME</div><img class="img-space pull-left space-profile-image-1 img-rounded profile-user-photo hidden" src="/community/static/img/default_space.jpg" alt="My Ecosystem" style=" width: 20px; height: 20px">                
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Rohan Mashiyava</strong> joined the space <strong>My Ecosystem</strong><br>
+
+                <!-- show time -->
+                <span class="time" title="2018-06-26T14:40:03-11:00">26 черв. 2018 - 14:40</span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

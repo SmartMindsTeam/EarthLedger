@@ -1,0 +1,23 @@
+a:2:{i:0;s:1015:"
+<a href="/community/index.php?r=activity%2Flink&id=93">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="128">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/community/uploads/profile_image/719a6756-1e55-447a-8d0c-84446e9b7405.jpg?m=1529404691">
+            
+            <!-- Show space image, if you are outside from a space -->
+                            
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Defina Sumardji</strong> created a new challenge "".<br>
+
+                <!-- show time -->
+                <span class="time"><span title="Jun 27, 2018 - 2:59 PM">Jun 27, 2018</span></span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

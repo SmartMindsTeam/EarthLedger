@@ -1,0 +1,23 @@
+a:2:{i:0;s:963:"
+<a href="/community/index.php?r=activity%2Flink&id=104">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="145">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/community/static/img/default_user.jpg">
+            
+            <!-- Show space image, if you are outside from a space -->
+                            
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Joseph Kuruvilla</strong> likes post "Post Test"<br>
+
+                <!-- show time -->
+                <span class="time" title="2018-07-03T06:46:46-11:00">Jul 3, 2018 - 5:46 PM</span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

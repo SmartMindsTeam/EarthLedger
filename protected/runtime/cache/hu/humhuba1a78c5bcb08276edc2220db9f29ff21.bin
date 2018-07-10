@@ -1,0 +1,22 @@
+a:2:{i:0;s:982:"
+<a href="/community/index.php?r=activity%2Flink&id=78">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="111">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/community/static/img/default_user.jpg">
+            
+            <!-- Show space image, if you are outside from a space -->
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Shaan C</strong> likes post "We&#039;re looking for great slogans of famous brands. Maybe..."<br>
+
+                <!-- show time -->
+                <span class="time" title="2018-06-26T10:28:31-11:00">26 черв. 2018 - 10:28</span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

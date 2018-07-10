@@ -1,0 +1,23 @@
+<?php
+return array (
+  '<strong>Space</strong> followers' => '<strong>Témakör</strong> követők',
+  'Administrator:' => 'Adminisztrátor:',
+  'Could not delete user who is a space owner! Name of Space: {spaceName}' => '',
+  'Default' => 'Alapértelmezett',
+  'Everyone can enter' => 'Bárki beléphet',
+  'Invite and request' => 'Meghívás és jelentkezés',
+  'Moderator:' => 'Moderátor:',
+  'No spaces found.' => 'Nem található témakör.',
+  'Only by invite' => 'Csak meghívással',
+  'Owner:' => 'Tulajdonos:',
+  'Private' => 'Privát',
+  'Private (Invisible)' => 'Privát(láthatatlan)',
+  'Public' => 'Nyilvános',
+  'Public (Members & Guests)' => 'Nyilvános (tagok és vendégek)',
+  'Public (Members only)' => 'Nyilvános (csak tagoknak)',
+  'Public (Registered users only)' => 'Nyilvános (csak regisztrált felhasználóknak)',
+  'Public (Visible)' => 'Nyilvános (látható)',
+  'Settings' => 'Beállítások',
+  'Space' => 'Témakör',
+  'Visible for all (members and guests)' => 'Mindenkinek látható (tagok és vendégek)',
+);
