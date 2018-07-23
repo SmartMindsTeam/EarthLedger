@@ -15,6 +15,9 @@ humhub.module('stream', function (module, require, $) {
     var modal = require('ui.modal');
     var additions = require('ui.additions');
 
+    var check_previous_selected = '';
+    var filter_custom = '';
+
     /**
      * Number of initial stream enteis loaded when stream is initialized.
      * @type Number
@@ -426,7 +429,9 @@ humhub.module('stream', function (module, require, $) {
     Stream.prototype.init = function () {
         this.lastContentId = 0;
         this.lastEntryLoaded = false;
+        console.log(this.$.data('filters'),'here in init this');
         var that = this;
+        console.log(that.$.data('filters'),'here in init that');
         return new Promise(function (resolve, reject) {
             that.clear();
             that.$.show();
@@ -610,9 +615,17 @@ humhub.module('stream', function (module, require, $) {
     Stream.prototype._load = function (cfg) {
         cfg = cfg || {};
         var that = this;
+        var changed_filter;
+            console.log(that.$.data('filters'),filter_custom, "hahah");
+            var cheesy_array = that.$.data('filters');
+            if (typeof cheesy_array !== 'undefined' && cheesy_array.length > 0) {
+                changed_filter = cheesy_array;
+            }else{
+                changed_filter = [filter_custom];
+            }
         return client.ajax(this.url, {
             data: {
-                'StreamQuery[filters]': that.$.data('filters'),
+                'StreamQuery[filters]': changed_filter,
                 'StreamQuery[sort]': cfg.sort,
                 'StreamQuery[from]': cfg.from,
                 'StreamQuery[limit]': cfg.limit,
@@ -777,9 +790,13 @@ humhub.module('stream', function (module, require, $) {
     Stream.prototype.setFilter = function (filterId) {
         var filters = this.$.data('filters') || [];
         if (filters.indexOf(filterId) < 0) {
+            console.log(filters,"here");
             filters.push(filterId);
+            console.log(filters,"here final");
+
         }
         this.$.data('filters', filters);
+        console.log(this.$.data('filters'),"this obj ");
         return this;
     };
 
@@ -1024,12 +1041,40 @@ humhub.module('stream', function (module, require, $) {
             evt.preventDefault();
             var $filter = $(this);
             var checkboxi = $filter.children("i");
+           //uncheck all filter
+           $(".wallFilter").find('i').not(checkboxi)
+                .removeClass('fa-check-square-o')
+                .addClass('fa-square-o');
+            filter_custom = $filter.attr('id').replace('filter_','');
+            if(filter_custom ==  'air'){
+                $('#stream_lable').text('Air Stream')
+            }
+            $(".wallFilter").each(function(index, obj){
+                if(check_previous_selected == obj.id){
+                   if($filter.attr('id') ==  obj.id){
+                       checkboxi.addClass('fa-check-square-o');
+                       check_previous_selected = obj.id;
+                       console.log(filter_custom);
+                       console.log('set filter',obj.id)
+                       getStream().setFilter(obj.id.replace('filter_', ''));
+                   }else{
+                       getStream().unsetFilter(obj.id.replace('filter_', ''));
+                   }
+               }else{
+                   getStream().unsetFilter(obj.id.replace('filter_', ''));
+
+               }
+
+            });
+           // return false;
             checkboxi.toggleClass('fa-square-o').toggleClass('fa-check-square-o');
             if (checkboxi.hasClass('fa-check-square-o')) {
                 getStream().setFilter($filter.attr('id').replace('filter_', ''));
             } else {
                 getStream().unsetFilter($filter.attr('id').replace('filter_', ''));
             }
+
+            //newFilterMode = newFilterMode.replace('filter_','');
             getStream().init();
         });
 

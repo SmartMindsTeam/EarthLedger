@@ -20,6 +20,7 @@ class StreamAction extends ContentContainerStream
         $this->activeQuery->andWhere(['content.object_model' => CustomPost::className()]);
         $str_filter = [];
         $sf = '';
+       // print_r($this->filters);die;
             //Air stream filter
         if(in_array('air',$this->filters)){
             if(!empty($this->getVaulesForStream('air')))
@@ -48,6 +49,39 @@ class StreamAction extends ContentContainerStream
             else
                 array_push($str_filter,' content.object_id IN (0) ');
         }
+        // setup other options like custom post type
+
+        if(in_array('challenges',$this->filters)){
+            if(!empty($this->getVaulesForCustomPosts('challenge')))
+                array_push($str_filter,' content.object_id IN ('. implode(',',$this->getVaulesForCustomPosts('challenge')).') ');
+            else
+                array_push($str_filter,' content.object_id IN (0) ');
+        }
+        if(in_array('solutions',$this->filters)){
+            if(!empty($this->getVaulesForCustomPosts('solution')))
+                array_push($str_filter,' content.object_id IN ('. implode(',',$this->getVaulesForCustomPosts('solution')).') ');
+            else
+                array_push($str_filter,' content.object_id IN (0) ');
+        }
+        if(in_array('news',$this->filters)){
+            if(!empty($this->getVaulesForCustomPosts('news')))
+                array_push($str_filter,' content.object_id IN ('. implode(',',$this->getVaulesForCustomPosts('news')).') ');
+            else
+                array_push($str_filter,' content.object_id IN (0) ');
+        }
+        if(in_array('products',$this->filters)){
+            if(!empty($this->getVaulesForCustomPosts('product')))
+                array_push($str_filter,' content.object_id IN ('. implode(',',$this->getVaulesForCustomPosts('product')).') ');
+            else
+                array_push($str_filter,' content.object_id IN (0) ');
+        }
+        if(in_array('custom',$this->filters)){
+            if(!empty($this->getVaulesForCustomPosts('custom')))
+                array_push($str_filter,' content.object_id IN ('. implode(',',$this->getVaulesForCustomPosts('custom')).') ');
+            else
+                array_push($str_filter,' content.object_id IN (0) ');
+        }
+
 
         //print_r(count($str_filter));die;
         for($i=0;$i < count($str_filter); $i++){
@@ -60,7 +94,17 @@ class StreamAction extends ContentContainerStream
         }
        $this->activeQuery->andWhere($sf);
     }
+    protected function getVaulesForCustomPosts($stream){
+        $rows = CustomPost::find()->select('id')->where(['type'=>$stream])->asArray()->all();
+        $row_array = [];
+        if(!empty($rows)){
+            foreach ($rows as $row){
+                array_push($row_array,$row['id']);
+            }
+        }
+        return $row_array;
 
+    }
     protected function getVaulesForStream($stream){
         $rows = CustomPost::find()->select('id')->where(['stream'=>$stream])->asArray()->all();
         $row_array = [];

@@ -1,0 +1,23 @@
+a:2:{i:0;s:1502:"
+<a href="/earthledger/index.php?r=activity%2Flink&id=134">
+    <li class="activity-entry" data-stream-entry data-action-component="activity.ActivityStreamEntry" data-content-key="184">
+        <div class="media">
+                            <!-- Show user image -->
+                <img class="media-object img-rounded pull-left" data-src="holder.js/32x32" alt="32x32"
+                     style="width: 32px; height: 32px;"
+                     src="/earthledger/uploads/profile_image/038375f0-f173-4a37-b98d-0a38dd8d89de.jpg?m=1530851556">
+            
+            <!-- Show space image, if you are outside from a space -->
+                                                <div class="img-space pull-left space-profile-acronym-1 space-acronym" style=" background-color: #6fdbe8; width: 20px; height: 20px; font-size: 8.8px; padding: 3.6px 0; border-radius: 2px;">E</div><img class="img-space pull-left space-profile-image-1 img-rounded profile-user-photo hidden" src="/earthledger/static/img/default_space.jpg" alt="Ecosystem" style=" width: 20px; height: 20px">                
+            
+            <div class="media-body text-break">
+
+                <!-- Show content -->
+                <strong>Rohan Mashiyava</strong> answered the Question "Right now, we are in the planning stages for our next meetup...".<br>
+
+                <!-- show time -->
+                <span class="time"><span title="Jul 9, 2018 - 14:53">Jul 9, 2018</span></span>            </div>
+        </div>
+    </li>
+</a>
+";i:1;N;}

@@ -4,19 +4,19 @@
                 <h4 class="side-menu">Global Streams <i class="fa fa-bars" aria-hidden="true"></i></h4>
                 <ul>
                     <li>
-                        <a href="#">Challenges <span></span></a>
+                        <a href="#" class="wallFilter" id="filter_challenges">Challenges <span></span></a>
                     </li>
                     <li>
-                        <a href="#">Solutions <span></span></a>
+                        <a href="#" class="wallFilter" id="filter_solutions">Solutions <span></span></a>
                     </li>
                     <li>
-                        <a href="#">Products & Services<span></span></a>
+                        <a href="#" class="wallFilter" id="filter_products">Products & Services<span></span></a>
                     </li>
                     <li>
-                        <a href="#">News <span></span></a>
+                        <a href="#" class="wallFilter" id="filter_news">News <span></span></a>
                     </li>
                     <li>
-                        <a href="#">Custom <span></span></a>
+                        <a href="#" class="wallFilter" id="filter_custom">Custom <span></span></a>
                     </li>
                 </ul>
 

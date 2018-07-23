@@ -17923,3 +17923,2206 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1531151378.1
     'REQUEST_TIME' => 1531151378
 ]
+2018-07-09 23:35:57 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: humhub\modules\dashboard\controllers\DashboardController::contentContainer in /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/controllers/DashboardController.php(58): yii\base\Component->__get('contentContaine...')
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(223): humhub\modules\dashboard\controllers\DashboardController->actions()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('index')
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#6 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#7 {main}
+2018-07-09 23:35:57 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531218957.014
+    'REQUEST_TIME' => 1531218957
+]
+2018-07-09 23:36:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php:38
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(38): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/private/var/ww...', 38, Array)
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#13 {main}
+2018-07-09 23:36:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JZiQolICr_F6aYkKuyfs_ahez4JaUtHhy0p_g91WzAUdFe9q-ISNzlHnoToqCbNxLIUmDx78V1akX7rt-1E14A=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54042'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531218973.404
+    'REQUEST_TIME' => 1531218973
+]
+2018-07-09 23:36:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php:38
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(38): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/private/var/ww...', 38, Array)
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#13 {main}
+2018-07-09 23:36:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'activity'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '10'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'JZiQolICr_F6aYkKuyfs_ahez4JaUtHhy0p_g91WzAUdFe9q-ISNzlHnoToqCbNxLIUmDx78V1akX7rt-1E14A=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54043'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531218973.409
+    'REQUEST_TIME' => 1531218973
+]
+2018-07-09 23:36:28 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php:38
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(38): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/private/var/ww...', 38, Array)
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#13 {main}
+2018-07-09 23:36:28 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'i0fN2FzedYhdx9knlDzKArgL7elnQ2RsCNB4QqQCSkGzyrIQ9lhXt3ZJ8RcFEpWOPNAEZCPt4ttnxb0sggWzpA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54089'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531218988.533
+    'REQUEST_TIME' => 1531218988
+]
+2018-07-09 23:36:28 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php:38
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(38): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', '/private/var/ww...', 38, Array)
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#12 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#13 {main}
+2018-07-09 23:36:28 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'activity'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '10'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'i0fN2FzedYhdx9knlDzKArgL7elnQ2RsCNB4QqQCSkGzyrIQ9lhXt3ZJ8RcFEpWOPNAEZCPt4ttnxb0sggWzpA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54090'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531218988.543
+    'REQUEST_TIME' => 1531218988
+]
+2018-07-09 23:37:35 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\base\ErrorException:1] yii\base\ErrorException: Class 'humhub\modules\dashboard\controllers\ContentContainerController' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/controllers/DashboardController.php:17
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-07-09 23:37:35 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219055.256
+    'REQUEST_TIME' => 1531219055
+]
+2018-07-09 23:37:48 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\web\HttpException:500] yii\web\HttpException: Could not determine content container! in /private/var/www/html/earthledger/protected/humhub/modules/content/components/ContentContainerController.php:98
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/controllers/DashboardController.php(23): humhub\modules\content\components\ContentContainerController->init()
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\controllers\DashboardController->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Controller->__construct('dashboard', Object(humhub\modules\dashboard\Module), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('humhub\\modules\\...', Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(638): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('dashboard')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(583): yii\base\Module->createController('')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('dashboard')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:37:48 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54447'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219068.206
+    'REQUEST_TIME' => 1531219068
+]
+2018-07-09 23:37:49 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\web\HttpException:500] yii\web\HttpException: Could not determine content container! in /private/var/www/html/earthledger/protected/humhub/modules/content/components/ContentContainerController.php:98
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/controllers/DashboardController.php(23): humhub\modules\content\components\ContentContainerController->init()
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\controllers\DashboardController->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Controller->__construct('dashboard', Object(humhub\modules\dashboard\Module), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('humhub\\modules\\...', Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(638): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('dashboard')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(583): yii\base\Module->createController('')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('dashboard')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:37:49 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219069.749
+    'REQUEST_TIME' => 1531219069
+]
+2018-07-09 23:37:50 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][yii\web\HttpException:500] yii\web\HttpException: Could not determine content container! in /private/var/www/html/earthledger/protected/humhub/modules/content/components/ContentContainerController.php:98
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/controllers/DashboardController.php(23): humhub\modules\content\components\ContentContainerController->init()
+#1 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\controllers\DashboardController->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(86): yii\base\Object->__construct(Array)
+#3 [internal function]: yii\base\Controller->__construct('dashboard', Object(humhub\modules\dashboard\Module), Array)
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('humhub\\modules\\...', Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(638): yii\BaseYii::createObject('humhub\\modules\\...', Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(591): yii\base\Module->createControllerByID('dashboard')
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(583): yii\base\Module->createController('')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(517): yii\base\Module->createController('dashboard')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:37:50 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54449'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219070.097
+    'REQUEST_TIME' => 1531219070
+]
+2018-07-09 23:41:03 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:150
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#1 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#4 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:41:03 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'activity'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '10'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'EdOCrkIJDMOmZS1jMEVisfOMu2cE46sgCiN6GeUULDwpXv1m6I8u_I3rBVOhaz09d1dS6kBNLZdlNr93wxPV2Q=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54552'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219263.291
+    'REQUEST_TIME' => 1531219263
+]
+2018-07-09 23:41:03 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:150
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#1 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#4 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:41:03 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'EdOCrkIJDMOmZS1jMEVisfOMu2cE46sgCiN6GeUULDwpXv1m6I8u_I3rBVOhaz09d1dS6kBNLZdlNr93wxPV2Q=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54551'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219263.286
+    'REQUEST_TIME' => 1531219263
+]
+2018-07-09 23:41:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:150
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#1 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#4 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:41:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '_lOi6f2p6S_uBnGGrrGOG9gzs-nU-NJlwI4QRgMcW_3G3t0hVy_LEMWIWbY_n9GXXOhaZJBWVNKvm9UoJRuiGA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54554'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219273.165
+    'REQUEST_TIME' => 1531219273
+]
+2018-07-09 23:41:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:150
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#1 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#2 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#4 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#13 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#14 {main}
+2018-07-09 23:41:13 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'activity'
+    'StreamQuery' => [
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '10'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '_lOi6f2p6S_uBnGGrrGOG9gzs-nU-NJlwI4QRgMcW_3G3t0hVy_LEMWIWbY_n9GXXOhaZJBWVNKvm9UoJRuiGA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54553'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=activity&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=10&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219273.174
+    'REQUEST_TIME' => 1531219273
+]
+2018-07-09 23:41:46 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:46 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54691'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219306.6
+    'REQUEST_TIME' => 1531219306
+]
+2018-07-09 23:41:54 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:53 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219313.841
+    'REQUEST_TIME' => 1531219313
+]
+2018-07-09 23:41:54 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:54 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54714'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219314.219
+    'REQUEST_TIME' => 1531219314
+]
+2018-07-09 23:41:54 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:54 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54732'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219314.412
+    'REQUEST_TIME' => 1531219314
+]
+2018-07-09 23:41:55 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:54 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54733'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219314.916
+    'REQUEST_TIME' => 1531219314
+]
+2018-07-09 23:41:55 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:55 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54734'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219315.104
+    'REQUEST_TIME' => 1531219315
+]
+2018-07-09 23:41:55 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'humhub\modules\dashboard\components\actions\CustomPost' not found in /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(154): humhub\modules\dashboard\components\actions\DashboardStream->getVaulesForStream('air')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(185): humhub\modules\dashboard\components\actions\DashboardStream->setupFilters()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/dashboard/components/actions/DashboardStream.php(36): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\dashboard\components\actions\DashboardStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\dashboard\controllers\DashboardController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('dashboard/dashb...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-09 23:41:55 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'dashboard/dashboard/stream'
+    'mode' => 'normal'
+    'StreamQuery' => [
+        'filters' => [
+            0 => 'air'
+        ]
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => '3VOLcb_lO8yrZ8IjMti1I7_TIeY9wG68KSHgAM8CGd7l3vS5FWMZ84Dp6hOj9uqvOwjIa3lu6AtGNCVu6QXgOw=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54739'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=dashboard%2Fdashboard%2Fstream&mode=normal&StreamQuery%5Bfilters%5D%5B%5D=air&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531219315.884
+    'REQUEST_TIME' => 1531219315
+]
+2018-07-09 23:55:37 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-09 23:55:37 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    '_pjax' => '#layout-content'
+    '_' => '1531219339258'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'l8_GNSWQHKNiIHeQplfBcgVbLcGmxT1u_mX58xKL5kGvQrn9jxY-nEmuX6A3eZ7-gYDETOJru9mRcDydNIwfpA=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '57883'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531219339258'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531219339258'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531220137.617
+    'REQUEST_TIME' => 1531220137
+]
+2018-07-09 23:55:37 [::1][31][jos9kp7fcrujgasqqokb35vs9g][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-09 23:55:37 [::1][31][jos9kp7fcrujgasqqokb35vs9g][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=jos9kp7fcrujgasqqokb35vs9g'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '57885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531220137.85
+    'REQUEST_TIME' => 1531220137
+]
+2018-07-10 23:05:43 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: [] operator not supported for strings in /private/var/www/html/earthledger/protected/humhub/modules/stream/models/StreamQuery.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(192): humhub\modules\stream\models\StreamQuery->addFilter(Array)
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(173): humhub\modules\stream\actions\Stream->setActionSettings()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(35): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\user\controllers\ProfileController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/profile/st...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-10 23:05:43 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/profile/stream'
+    'mode' => 'normal'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'StreamQuery' => [
+        'filters' => ''
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '8'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'ObEvqcQF3F2LekwydN4ZRX-ogIcf_iYiwIYUfRkmT80BPFBhboP-YqD0ZALl8EbJ-3NpCltQoJWvk9ETPyG2KA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54924'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=8&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531303543.826
+    'REQUEST_TIME' => 1531303543
+]
+2018-07-10 23:05:45 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: [] operator not supported for strings in /private/var/www/html/earthledger/protected/humhub/modules/stream/models/StreamQuery.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(192): humhub\modules\stream\models\StreamQuery->addFilter(Array)
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(173): humhub\modules\stream\actions\Stream->setActionSettings()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(35): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\user\controllers\ProfileController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/profile/st...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-10 23:05:45 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/profile/stream'
+    'mode' => 'normal'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'StreamQuery' => [
+        'filters' => ''
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'ObEvqcQF3F2LekwydN4ZRX-ogIcf_iYiwIYUfRkmT80BPFBhboP-YqD0ZALl8EbJ-3NpCltQoJWvk9ETPyG2KA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54923'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531303545.358
+    'REQUEST_TIME' => 1531303545
+]
+2018-07-10 23:05:45 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: [] operator not supported for strings in /private/var/www/html/earthledger/protected/humhub/modules/stream/models/StreamQuery.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(192): humhub\modules\stream\models\StreamQuery->addFilter(Array)
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(173): humhub\modules\stream\actions\Stream->setActionSettings()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(35): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\user\controllers\ProfileController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/profile/st...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-10 23:05:45 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/profile/stream'
+    'mode' => 'normal'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'StreamQuery' => [
+        'filters' => ''
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'ObEvqcQF3F2LekwydN4ZRX-ogIcf_iYiwIYUfRkmT80BPFBhboP-YqD0ZALl8EbJ-3NpCltQoJWvk9ETPyG2KA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54925'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531303545.801
+    'REQUEST_TIME' => 1531303545
+]
+2018-07-10 23:05:46 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: [] operator not supported for strings in /private/var/www/html/earthledger/protected/humhub/modules/stream/models/StreamQuery.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(192): humhub\modules\stream\models\StreamQuery->addFilter(Array)
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(173): humhub\modules\stream\actions\Stream->setActionSettings()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(35): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\user\controllers\ProfileController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/profile/st...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-10 23:05:46 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/profile/stream'
+    'mode' => 'normal'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'StreamQuery' => [
+        'filters' => ''
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'ObEvqcQF3F2LekwydN4ZRX-ogIcf_iYiwIYUfRkmT80BPFBhboP-YqD0ZALl8EbJ-3NpCltQoJWvk9ETPyG2KA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54922'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531303546.293
+    'REQUEST_TIME' => 1531303546
+]
+2018-07-10 23:05:46 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: [] operator not supported for strings in /private/var/www/html/earthledger/protected/humhub/modules/stream/models/StreamQuery.php:194
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(192): humhub\modules\stream\models\StreamQuery->addFilter(Array)
+#1 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/Stream.php(173): humhub\modules\stream\actions\Stream->setActionSettings()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/stream/actions/ContentContainerStream.php(35): humhub\modules\stream\actions\Stream->init()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Object.php(107): humhub\modules\stream\actions\ContentContainerStream->init()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Action.php(62): yii\base\Object->__construct(Array)
+#5 [internal function]: yii\base\Action->__construct('stream', Object(humhub\modules\user\controllers\ProfileController), Array)
+#6 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(381): ReflectionClass->newInstanceArgs(Array)
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('humhub\\modules\\...', Array, Array)
+#8 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/BaseYii.php(348): yii\di\Container->get('humhub\\modules\\...', Array, Array)
+#9 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(225): yii\BaseYii::createObject(Array, Array)
+#10 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(125): yii\base\Controller->createAction('stream')
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('stream', Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/profile/st...', Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#14 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#15 {main}
+2018-07-10 23:05:46 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/profile/stream'
+    'mode' => 'normal'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'StreamQuery' => [
+        'filters' => ''
+        'sort' => 'c'
+        'from' => '0'
+        'limit' => '4'
+        'suppressionsOnly' => 'false'
+    ]
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_X_CSRF_TOKEN' => 'ObEvqcQF3F2LekwydN4ZRX-ogIcf_iYiwIYUfRkmT80BPFBhboP-YqD0ZALl8EbJ-3NpCltQoJWvk9ETPyG2KA=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '54921'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Fprofile%2Fstream&mode=normal&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&StreamQuery%5Bfilters%5D=&StreamQuery%5Bsort%5D=c&StreamQuery%5Bfrom%5D=0&StreamQuery%5Blimit%5D=4&StreamQuery%5BsuppressionsOnly%5D=false'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531303546.551
+    'REQUEST_TIME' => 1531303546
+]
+2018-07-11 00:44:01 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-11 00:44:01 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    '_pjax' => '#layout-content'
+    '_' => '1531309399944'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'gluMsfuK9EoZ-wl3swoSY4--I6B_yM7QPrb3LTnty4u61vN5UQzWdTJ1IUciJE3vC2XKLTtmSGdRozJDH-oybg=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '53234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531309399944'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531309399944'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531309441.137
+    'REQUEST_TIME' => 1531309441
+]
+2018-07-11 00:44:01 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-11 00:44:01 [::1][31][c4hvmo67cli6gaavqohpbd9ehr][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=c4hvmo67cli6gaavqohpbd9ehr'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '53235'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531309441.402
+    'REQUEST_TIME' => 1531309441
+]
+2018-07-11 02:09:56 [::1][31][b99pu0d6j2l0aspd72m61nk7rg][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-11 02:09:56 [::1][31][b99pu0d6j2l0aspd72m61nk7rg][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    '_pjax' => '#layout-content'
+    '_' => '1531309445134'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'RDqKRXZhyw3WhgrOV38sp9Lb5LkZHo5c4HPyqYu9Dtp8t_WN3OfpMv0IIv7GUXMrVgANNF2wCOuPZjfHrbr3Pw=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=b99pu0d6j2l0aspd72m61nk7rg'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '53844'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531309445134'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531309445134'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531314596.017
+    'REQUEST_TIME' => 1531314596
+]
+2018-07-11 02:09:56 [::1][31][b99pu0d6j2l0aspd72m61nk7rg][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-11 02:09:56 [::1][31][b99pu0d6j2l0aspd72m61nk7rg][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=b99pu0d6j2l0aspd72m61nk7rg'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '53845'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531314596.603
+    'REQUEST_TIME' => 1531314596
+]
+2018-07-11 03:16:03 [::1][31][2uemu9ml26q7clps63og006ou0][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-11 03:16:03 [::1][31][2uemu9ml26q7clps63og006ou0][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+    '_pjax' => '#layout-content'
+    '_' => '1531318531655'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'WUJPf2PMDHGQMN1oEOzo6J8RArvzlQoR-yNR8vki8shhzzC3yUouTru-9ViBwrdkG8rrNrc7jKaUNpSc3yULLQ=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=2uemu9ml26q7clps63og006ou0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '58033'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531318531655'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de&_pjax=%23layout-content&_=1531318531655'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531318563.552
+    'REQUEST_TIME' => 1531318563
+]
+2018-07-11 03:16:03 [::1][31][2uemu9ml26q7clps63og006ou0][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-11 03:16:03 [::1][31][2uemu9ml26q7clps63og006ou0][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    'uguid' => '038375f0-f173-4a37-b98d-0a38dd8d89de'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=dashboard%2Fdashboard'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_user-spaces-panel=expanded; pm_space-members-panel=expanded; _csrf=7a78b03c6177822a44d8b256486ccb3a1843f019b971c1bdaf17a145c89199b5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%228%8D%7F%C8%AA%86%22%3F%2B%8E%280%91._%8C%84%DB%E9%8DD%AE%86%B7o%15%C5n%26%07%F9%E5%22%3B%7D; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D; PHPSESSID=2uemu9ml26q7clps63og006ou0'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '58035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1531318563.796
+    'REQUEST_TIME' => 1531318563
+]
+2018-07-23 00:16:54 [::1][31][01avq73ng8blam4tdki7fvhm5o][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-23 00:16:54 [::1][31][01avq73ng8blam4tdki7fvhm5o][info][application] $_GET = [
+    'r' => 'user/account/edit'
+    '_pjax' => '#layout-content'
+    '_' => '1532344442075'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_X_CSRF_TOKEN' => 'nSwEZ-26RW1upllSgvGugJquRE84GTge3dyslOPAAjEQFaAFff16uzPJ1peQKTgSR8DihUvVQszbaT0Uu7INbw=='
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_PJAX' => 'true'
+    'HTTP_X_PJAX_CONTAINER' => '#layout-content'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; _csrf=c8657b9b4606f3fa5f4179a180d0cb4ebfcf70e66cd599b3c6a5225b832c8d06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%8D9%A4b%90G%3F%D6%5Do%8F%C5%12%D8%96%92%DDn%A6%CAs%CCz%D2%06%B5%91%80Xr%0F%5E%22%3B%7D; PHPSESSID=01avq73ng8blam4tdki7fvhm5o; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '53972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit&_pjax=%23layout-content&_=1532344442075'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit&_pjax=%23layout-content&_=1532344442075'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1532344614.577
+    'REQUEST_TIME' => 1532344614
+]
+2018-07-23 00:16:54 [::1][31][01avq73ng8blam4tdki7fvhm5o][error][Error] Error: Class 'Locale' not found in /private/var/www/html/earthledger/protected/humhub/libs/Iso3166Codes.php:527
+Stack trace:
+#0 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/CountrySelect.php(60): humhub\libs\Iso3166Codes::country('AF')
+#1 /private/var/www/html/earthledger/protected/humhub/modules/user/models/fieldtype/Select.php(87): humhub\modules\user\models\fieldtype\CountrySelect->getSelectItems()
+#2 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(70): humhub\modules\user\models\fieldtype\Select->getFieldRules()
+#3 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(443): humhub\modules\user\models\Profile->rules()
+#4 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(411): yii\base\Model->createValidators()
+#5 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(187): yii\base\Model->getValidators()
+#6 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(81): yii\base\Model->scenarios()
+#7 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Model.php(751): humhub\modules\user\models\Profile->scenarios()
+#8 /private/var/www/html/earthledger/protected/humhub/modules/user/models/Profile.php(186): yii\base\Model->safeAttributes()
+#9 /private/var/www/html/earthledger/protected/humhub/modules/user/controllers/AccountController.php(70): humhub\modules\user\models\Profile->getFormDefinition()
+#10 [internal function]: humhub\modules\user\controllers\AccountController->actionEdit()
+#11 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('edit', Array)
+#14 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/account/ed...', Array)
+#15 /private/var/www/html/earthledger/protected/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(humhub\components\Request))
+#16 /private/var/www/html/earthledger/index.php(25): yii\base\Application->run()
+#17 {main}
+2018-07-23 00:16:54 [::1][31][01avq73ng8blam4tdki7fvhm5o][info][application] $_GET = [
+    'r' => 'user/account/edit'
+]
+
+$_SERVER = [
+    'BASE' => '/earthledger'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/earthledger/index.php?r=user%2Fprofile%2Fhome&uguid=038375f0-f173-4a37-b98d-0a38dd8d89de'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7'
+    'HTTP_COOKIE' => 'pm_getting-started-panel=expanded; pm_new-people-panel=expanded; pm_user-statistics-panel=expanded; pm_user-spaces-panel=expanded; _csrf=c8657b9b4606f3fa5f4179a180d0cb4ebfcf70e66cd599b3c6a5225b832c8d06a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%8D9%A4b%90G%3F%D6%5Do%8F%C5%12%D8%96%92%DDn%A6%CAs%CCz%D2%06%B5%91%80Xr%0F%5E%22%3B%7D; PHPSESSID=01avq73ng8blam4tdki7fvhm5o; _identity=63a5ed00680f67cecb213d6370b807dff5f62f244ab8eb021da442265cb08b3da%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A51%3A%22%5B31%2C%22038375f0-f173-4a37-b98d-0a38dd8d89de%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Unix) PHP/7.1.16'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/var/www/html/earthledger/index.php'
+    'REMOTE_PORT' => '53974'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Faccount%2Fedit'
+    'REQUEST_URI' => '/earthledger/index.php?r=user%2Faccount%2Fedit'
+    'SCRIPT_NAME' => '/earthledger/index.php'
+    'PHP_SELF' => '/earthledger/index.php'
+    'REQUEST_TIME_FLOAT' => 1532344614.861
+    'REQUEST_TIME' => 1532344614
+]

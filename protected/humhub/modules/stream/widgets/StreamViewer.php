@@ -94,6 +94,12 @@ class StreamViewer extends Widget
             $this->filters['filter_ocean'] = Yii::t('ContentModule.widgets_views_stream', 'Ocean');
             $this->filters['filter_land'] = Yii::t('ContentModule.widgets_views_stream', 'Land');
             $this->filters['filter_river'] = Yii::t('ContentModule.widgets_views_stream', 'River');
+
+            $this->filters['filter_challenges'] = Yii::t('ContentModule.widgets_views_stream', 'Challenges');
+            $this->filters['filter_solutions'] = Yii::t('ContentModule.widgets_views_stream', 'Solution');
+            $this->filters['filter_product'] = Yii::t('ContentModule.widgets_views_stream', 'Product');
+            $this->filters['filter_news'] = Yii::t('ContentModule.widgets_views_stream', 'News');
+            $this->filters['filter_custom'] = Yii::t('ContentModule.widgets_views_stream', 'Custom');
         }
 
         // Setup default messages

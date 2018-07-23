@@ -16,15 +16,17 @@ $contentIdData = ($contentId != "") ? 'data-stream-contentid="' . $contentId . '
 <?php if ($this->context->showFilters) : ?>
     <ul class="nav nav-tabs wallFilterPanel" id="filter" style="display: none;">
         <li class=" dropdown">
-            <a class="stream-filter dropdown-toggle" data-toggle="dropdown" href="#"><?= Yii::t('ContentModule.widgets_views_stream', 'Filter'); ?> <b
+            <a class="stream-filter dropdown-toggle" id="stream_lable" data-toggle="dropdown" href="#"><?= Yii::t('ContentModule.widgets_views_stream', 'Global Stream'); ?> <b
                     class="caret"></b></a>
             <ul class="dropdown-menu">
                 <?php foreach ($filters as $filterId => $filterTitle): ?>
+                <?php if(in_array($filterId,['filter_air','filter_river','filter_land','filter_ocean'])):?>
                     <li>
                         <a href="#" class="wallFilter" id="<?= $filterId; ?>">
                             <i class="fa fa-square-o"></i> <?= $filterTitle; ?>
                         </a>
                     </li>
+                <?php endif;?>
                 <?php endforeach; ?>
             </ul>
         </li>

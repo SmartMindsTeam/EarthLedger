@@ -62,8 +62,8 @@ class Module extends \humhub\components\Module
         if (Yii::$app->user->isGuest) {
             return $this->guestAccess;
         }
-
-        return Yii::$app->user->can(AccessDirectory::class);
+        return true;
+       // return Yii::$app->user->can(AccessDirectory::class);
     }
 
     /**
